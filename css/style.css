@@ -42,6 +42,16 @@ img {
     display: block;
 }
 
+video{
+    width: 100%;
+    display: block;
+}
+
+iframe{
+    width: 100%;
+    display: block;
+}
+
 ul {
     list-style: none;
 }
@@ -294,28 +304,25 @@ header ul li a:hover {
 
 /* Quality Section Start */
 .quality .quality-items {
-    padding: 10px;
     text-align: center;
 }
 
 .quality .quality-items .item1 {
     width: 100%;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .quality .quality-items .item1 img {
     width: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-bottom: 10px;
 }
 
 .quality .quality-items p {
     text-transform: uppercase;
     font-weight: 700;
-    margin-top: 70px;
     font-family: var(--heading-font);
+    margin-bottom: 10px;
 }
 
 .quality .quality-items p span {
@@ -385,10 +392,12 @@ header ul li a:hover {
     background-color: var(--theme-white);
     text-align: center;
     position: relative;
-    padding: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     overflow: hidden;
     transition: all 0.5s ease;
+    padding: 15px 10px;
+    margin: 10px 0;
+    max-width: 300px;
 }
 
 .dealership .dealership-content::before {
@@ -511,6 +520,10 @@ header ul li a:hover {
     width: 75px;
 }
 
+.mission .mission-content p{
+    margin-bottom: 10px;
+}
+
 /* Mission Section End */
 
 /* Values Section Start */
@@ -537,6 +550,9 @@ header ul li a:hover {
     border-radius: 5px;
     padding: 30px;
     transition: all 0.3s ease-in-out;
+    min-width: 400px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .values .values-items:hover {
@@ -607,8 +623,11 @@ header ul li a:hover {
 
 .vision .vision-content p {
     text-align: justify;
+    margin-bottom: 10px;
 }
-
+.vision .vision-video {
+    min-width: 200px;
+}
 /* Vision Section End */
 
 /* Contact Section Start */
@@ -626,6 +645,8 @@ header ul li a:hover {
     padding: 10px;
     text-align: center;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+    min-width: 300px;
 }
 
 .contact .contact-detail:hover {
@@ -688,6 +709,11 @@ header ul li a:hover {
     font-weight: 700;
     font-family: var(--heading-font);
     color: var(--theme-font);
+}
+
+.reach-us .reach-header iframe{
+    min-width: 200px;
+    margin-bottom: 20px;
 }
 
 .reach-us .msg-header h2 {
@@ -770,6 +796,10 @@ textarea {
     transform: translateX(-50%);
 }
 
+.recipes .recipe-item{
+    margin-bottom: 20px;
+    max-width: 360px;
+}
 .recipes .recipe-item .recipe-image {
     overflow: hidden;
     background-color: transparent;
@@ -867,7 +897,7 @@ textarea {
 }
 
 .recipe1 .recipe1-header .recipe1-image img {
-    width: 700px;
+    max-width: 700px;
     height: 400px;
 }
 
@@ -946,6 +976,7 @@ textarea {
 .recipe1 .recipe-process ul li p {
     font-size: 18px;
     text-align: justify;
+    margin-bottom: 10px;
 }
 
 /* Recipes1 Section End */
@@ -1014,12 +1045,12 @@ footer .footer-details ul li {
     margin-bottom: 10px;
 }
 
-footer .footer-details ul li a {
+footer .footer-details>ul>li>a {
     font-size: 14px;
     font-weight: 500;
 }
 
-footer .footer-details ul li a:hover {
+footer .footer-details>ul>li>a:hover {
     color: var(--theme-font);
     font-weight: 700;
 }
@@ -1037,7 +1068,7 @@ footer .footer-details .contact-details ul li {
     padding: 20px 0;
 }
 
-footer .footer-details .contact-details ul li a .fa-facebook {
+footer .footer-details .contact-details .fa-facebook {
     font-size: 24px;
     color: blue;
 }
@@ -1060,6 +1091,7 @@ footer .footer-details .address-details .fa-location-dot {
 
 footer .footer-details .address-details p {
     padding: 0 20px;
+    margin-bottom: 20px;
 }
 
 footer .copyright {
