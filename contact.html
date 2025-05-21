@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="./css/all.min.css" type="text/css" />
   <link rel="stylesheet" href="./Fonts/stylesheet.css" type="text/css" />
   <link rel="stylesheet" href="./Scope_One/stylesheet.css" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
 </head>
 
 <body>
@@ -99,7 +101,7 @@
             <div class="msg-header">
               <h2>Send Message</h2>
               <div class="msg-details">
-                <form method="post">
+                <form method="post" id="client-details">
                   <div class="row">
                     <div class="col-6">
                       <input type="text" name="name" id="name" placeholder="Full Name" />
@@ -123,7 +125,7 @@
                   </div>
                   <div class="row">
                     <div class="col-12">
-                      <a href="">Send Message</a>
+                      <button type="submit" class="btn-submit">Send Message</button>
                     </div>
                   </div>
                 </form>
@@ -188,6 +190,34 @@
     </section>
   </footer>
   <!-- Footer Section End-->
+  <script>
+    document.getElementById("client-details").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const formData = new FormData(form);
+
+      // Convert form data to an object
+      const data = [{
+        Name: formData.get("name"),
+        Email: formData.get("email"),
+        Phone: formData.get("phoneno"),
+        Subject: formData.get("subject"),
+        Message: formData.get("msg")
+      }];
+
+      // Create a worksheet
+      const worksheet = XLSX.utils.json_to_sheet(data);
+
+      // Create a workbook and append the worksheet
+      const workbook = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(workbook, worksheet, "ClientDetails");
+
+      // Generate and download the .xlsx file
+      XLSX.writeFile(workbook, "client-details.xlsx");
+    });
+  </script>
+
 </body>
 
 </html>
