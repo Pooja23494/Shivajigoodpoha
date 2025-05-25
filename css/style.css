@@ -19,7 +19,6 @@
     box-sizing: border-box;
 }
 
-html,
 body {
     font-family: "Scope One", serif;
     scroll-behavior: smooth;
@@ -42,12 +41,12 @@ img {
     display: block;
 }
 
-video{
+video {
     width: 100%;
     display: block;
 }
 
-iframe{
+iframe {
     width: 100%;
     display: block;
 }
@@ -229,11 +228,14 @@ header {
     z-index: 999;
 }
 
-header .logo {
+/* Logo image styling */
+.navbar-brand img {
+    height: 60px;
     width: 100px;
 }
 
-header ul li a {
+/* Navbar links styling */
+.navbar-nav .nav-link {
     font-size: 14px;
     font-weight: 700;
     font-family: var(--heading-font);
@@ -241,11 +243,44 @@ header ul li a {
     padding: 10px;
 }
 
-header ul li a:hover {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
     color: var(--theme-white);
     font-weight: 700;
     background-color: var(--theme-font);
 }
+
+/* Active nav link styling */
+.navbar-nav .nav-link.active {
+    background-color: var(--theme-font);
+    border-bottom: 2px solid var(--theme-font);
+}
+
+/* Optional: change navbar background and shadow */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Navbar toggler customization (hamburger icon) */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Mobile menu style */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 0.25rem;
+    }
+}
+
 
 /* Header Section End */
 
@@ -294,6 +329,7 @@ header ul li a:hover {
     font-family: var(--heading-font);
     text-transform: uppercase;
     transition: all .3s ease-in-out;
+    text-decoration: none;
 }
 
 .hero .hero-image a:hover {
@@ -520,7 +556,7 @@ header ul li a:hover {
     width: 75px;
 }
 
-.mission .mission-content p{
+.mission .mission-content p {
     margin-bottom: 10px;
 }
 
@@ -592,6 +628,7 @@ header ul li a:hover {
 
 .values .values-items ul {
     list-style: circle;
+    padding-left: 0;
 }
 
 .values .values-items ul li {
@@ -625,9 +662,11 @@ header ul li a:hover {
     text-align: justify;
     margin-bottom: 10px;
 }
+
 .vision .vision-video {
     min-width: 200px;
 }
+
 /* Vision Section End */
 
 /* Contact Section Start */
@@ -691,10 +730,15 @@ header ul li a:hover {
     margin-bottom: 5px;
     font-family: var(--heading-font);
     transition: all 0.3s ease-in-out;
+    font-size: 24px;
+}
+
+.contact .contact-detail h4 {
+    font-size: 21px;
 }
 
 .contact .contact-detail h5 {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 30px;
     margin-bottom: 30px;
     font-weight: 400;
@@ -711,7 +755,7 @@ header ul li a:hover {
     color: var(--theme-font);
 }
 
-.reach-us .reach-header iframe{
+.reach-us .reach-header iframe {
     min-width: 200px;
     margin-bottom: 20px;
 }
@@ -796,10 +840,11 @@ textarea {
     transform: translateX(-50%);
 }
 
-.recipes .recipe-item{
+.recipes .recipe-item {
     margin-bottom: 20px;
     max-width: 360px;
 }
+
 .recipes .recipe-item .recipe-image {
     overflow: hidden;
     background-color: transparent;
@@ -988,7 +1033,7 @@ textarea {
 #scroll-to-top-btn {
     position: fixed;
     bottom: 2rem;
-    left: calc(95% + 2rem);
+    right: 1rem;
     text-decoration: none;
     color: var(--theme-white);
     background-color: var(--theme-font);
@@ -1041,16 +1086,22 @@ footer .footer-details h2::before {
     bottom: 0px;
 }
 
+footer .footer-details ul {
+    padding-left: 0;
+}
+
 footer .footer-details ul li {
     margin-bottom: 10px;
 }
 
-footer .footer-details>ul>li>a {
+footer .footer-details ul li .footer-link {
     font-size: 14px;
     font-weight: 500;
+    text-decoration: none;
+    color: var(--heading-font);
 }
 
-footer .footer-details>ul>li>a:hover {
+footer .footer-details ul li .footer-link:hover {
     color: var(--theme-font);
     font-weight: 700;
 }
@@ -1058,10 +1109,12 @@ footer .footer-details>ul>li>a:hover {
 footer .footer-details .contact-details h4 {
     margin-top: 20px;
     margin-bottom: 10px;
+    font-size: 18px;
+
 }
 
 footer .footer-details .contact-details span {
-    font-weight: 500;
+    font-size: 16px;
 }
 
 footer .footer-details .contact-details ul li {
@@ -1105,6 +1158,7 @@ footer .copyright {
 
 footer .copyright h4 {
     font-weight: 400;
+    font-size: 16px;
 }
 
 footer .copyright h4 span {
