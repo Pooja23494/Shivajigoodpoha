@@ -368,6 +368,46 @@ header {
 
 /* Quality Section End */
 
+/* Product Section Start */
+.product{
+    background: linear-gradient(0.25turn, #6ea8c1, #ebf8e1, #6ea8c1);
+}
+.product .product-header h1{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+    text-align: center;
+    color: var(--theme-font);
+    margin-bottom: 50px;
+    padding-top: 40px;
+}
+.product .product-item{
+    background-color: var(--theme-white);
+    padding: 20px 10px;
+    margin: 40px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product .product-item .product-img{
+    width: 250px;
+    height: 300px;
+}
+.product .product-detail{
+    text-align: center;
+}
+.product .product-detail h1{
+    font-size: 32px;
+}
+.product .product-detail h1 span{
+    color: var(--theme-font);
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+}
+/* Product Section End */
+
 /* Why to choose us Section Start */
 .choose-us .choose-header h1 {
     font-size: 36px;
@@ -677,6 +717,7 @@ header {
     font-family: var(--heading-font);
     text-align: center;
     margin-bottom: 40px;
+    margin-top: 30px;
 }
 
 .contact .contact-detail {
@@ -818,6 +859,7 @@ textarea {
     text-align: center;
     margin-bottom: 40px;
     position: relative;
+    margin-top: 30px;
 }
 
 .recipes .recipes-header h2::before {
@@ -925,6 +967,7 @@ textarea {
 /* Recipes1 Section Start */
 .recipe1 .recipe1-header {
     text-align: center;
+    margin-top: 30px;
 }
 
 .recipe1 .recipe1-header h1 {
