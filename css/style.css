@@ -552,22 +552,27 @@ header {
 }
 
 .about .about-image {
+    margin-top: 30px;
     margin-bottom: 30px;
+    padding: 30px;
     display: block;
     position: relative;
 }
 
-.about .about-image .st-zoom {
+.about .about-image .st-zoom,
+.product .product-item .st-zoom {
     overflow: hidden;
     background-color: transparent;
     transition: all 0.4s ease-in-out;
 }
 
-.about .about-image .st-zoom .zoom-in {
+.about .about-image .st-zoom .zoom-in,
+.product .product-item .st-zoom .zoom-in {
     transition: all 0.3s ease-in-out;
 }
 
-.about .about-image .st-zoom:hover .zoom-in {
+.about .about-image .st-zoom:hover .zoom-in,
+.product .product-item .st-zoom:hover .zoom-in {
     transform: scale(1.07);
 }
 

@@ -116,13 +116,18 @@
             <div class="msg-header">
               <h2>Send Message</h2>
               <div class="msg-details">
-                <form method="post" id="client-details">
+                <form action="https://formsubmit.co/poojaclass1994@gmail.com" method="POST" id="client-details">
+                  <!-- Hidden options -->
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_template" value="table">
+                  <input type="hidden" name="_next" value="http://127.0.0.1:5501/thankyou.html">
+
                   <div class="row">
                     <div class="col-xs-12 col-md-6 col-xxl-6">
-                      <input type="text" name="name" id="name" placeholder="Full Name" />
+                      <input type="text" name="name" id="name" placeholder="Full Name" required />
                     </div>
                     <div class="col-xs-12 col-md-6 col-xxl-6">
-                      <input type="email" name="email" id="email" placeholder="Email Address" />
+                      <input type="email" name="email" id="email" placeholder="Email Address" required />
                     </div>
                   </div>
                   <div class="row">
@@ -205,33 +210,7 @@
     </section>
   </footer>
   <!-- Footer Section End-->
-  <script>
-    document.getElementById("client-details").addEventListener("submit", function (e) {
-      e.preventDefault();
 
-      const form = e.target;
-      const formData = new FormData(form);
-
-      // Convert form data to an object
-      const data = [{
-        Name: formData.get("name"),
-        Email: formData.get("email"),
-        Phone: formData.get("phoneno"),
-        Subject: formData.get("subject"),
-        Message: formData.get("msg")
-      }];
-
-      // Create a worksheet
-      const worksheet = XLSX.utils.json_to_sheet(data);
-
-      // Create a workbook and append the worksheet
-      const workbook = XLSX.utils.book_new();
-      XLSX.utils.book_append_sheet(workbook, worksheet, "ClientDetails");
-
-      // Generate and download the .xlsx file
-      XLSX.writeFile(workbook, "client-details.xlsx");
-    });
-  </script>
   <script>
     const links = document.querySelectorAll('.nav-link');
     const currentUrl = window.location.pathname;
