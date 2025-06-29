@@ -1,382 +1,428 @@
-@media(max-width: 320px) {
-    .container {
-        max-width: 100%;
-    }
-
-    .container-fluid {
-        max-width: 100%;
-        padding: 0 10px;
-    }
-}
-
-@media(min-width: 320px){
-    .col-xs-1 {
-        width: 8.33%;
-        padding: 0 10px;
-    }
-
-    .col-xs-2 {
-        width: 16.66%;
-        padding: 0 10px;
-    }
-
-    .col-xs-3 {
-        width: 25%;
-        padding: 0 10px;
-    }
-
-    .col-xs-4 {
-        width: 33.33%;
-        padding: 0 10px;
-    }
-
-    .col-xs-5 {
-        width: 41.65%;
-        padding: 0 10px;
-    }
-
-    .col-xs-6 {
-        width: 50%;
-        padding: 0 10px;
-    }
-
-    .col-xs-7 {
-        width: 58.31%;
-        padding: 0 10px;
-    }
-
-    .col-xs-8 {
-        width: 66.64%;
-        padding: 0 10px;
-    }
-
-    .col-xs-9 {
-        width: 75%;
-        padding: 0 10px;
-    }
-
-    .col-xs-10 {
-        width: 83.3%;
-        padding: 0 10px;
-    }
-
-    .col-xs-11 {
-        width: 91.63%;
-        padding: 0 10px;
-    }
-
-    .col-xs-12 {
-        width: 100%;
-        padding: 0 10px;
-    }
-}
-
+/* sm */
 @media(min-width: 576px) {
+    .container-sm {
+        max-width: 540px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
     .col-sm-1 {
         width: 8.33%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-sm-2 {
         width: 16.66%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-sm-3 {
         width: 25%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-sm-4 {
         width: 33.33%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-sm-5 {
         width: 41.65%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-sm-6 {
         width: 50%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-sm-7 {
         width: 58.31%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-sm-8 {
         width: 66.64%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-sm-9 {
         width: 75%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-sm-10 {
         width: 83.3%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-sm-11 {
         width: 91.63%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-sm-12 {
         width: 100%;
-        padding: 0 10px;
+        padding: 10px;
     }
 }
 
-@media(min-width:768px){
+/* md */
+@media(min-width:768px) {
+    .container-md {
+        max-width: 720px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
     .col-md-1 {
         width: 8.33%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-md-2 {
         width: 16.66%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-md-3 {
         width: 25%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-md-4 {
         width: 33.33%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-md-5 {
         width: 41.65%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-md-6 {
         width: 50%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-md-7 {
         width: 58.31%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-md-8 {
         width: 66.64%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-md-9 {
         width: 75%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-md-10 {
         width: 83.3%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-md-11 {
         width: 91.63%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-md-12 {
         width: 100%;
-        padding: 0 10px;
+        padding: 10px;
     }
+
+    /* Reach us Section Start */
+    .reach-us .msg-details input,
+    textarea {
+        padding: 15px 20px;
+        margin: 0px 20px 5px 0;
+    }
+
+    .reach-us .msg-details .btn-submit {
+        padding: 10px 40px;
+        font-size: 20px;
+    }
+
+    /* Reach us Section End */
 }
 
-@media(min-width:992px){
+/* lg */
+@media(min-width:992px) {
+    .container-lg {
+        max-width: 960px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
     .col-lg-1 {
         width: 8.33%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-lg-2 {
         width: 16.66%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-lg-3 {
         width: 25%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-lg-4 {
         width: 33.33%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-lg-5 {
         width: 41.65%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-lg-6 {
         width: 50%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-lg-7 {
         width: 58.31%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-lg-8 {
         width: 66.64%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-lg-9 {
         width: 75%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-lg-10 {
         width: 83.3%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-lg-11 {
         width: 91.63%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-lg-12 {
         width: 100%;
-        padding: 0 10px;
+        padding: 10px;
     }
+
+    /* Reach us Section Start */
+    .reach-us .msg-details input,
+    textarea {
+        padding: 22px 30px;
+        margin: 10px 20px 5px 0;
+    }
+
+    .reach-us .msg-details .btn-submit {
+        padding: 10px 40px;
+        font-size: 20px;
+    }
+
+    /* Reach us Section End */
 }
 
-@media(min-width:1200px){
+/* xl */
+@media(min-width:1200px) {
+    .container-xl {
+        max-width: 1140px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
     .col-xl-1 {
         width: 8.33%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xl-2 {
         width: 16.66%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xl-3 {
         width: 25%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xl-4 {
         width: 33.33%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xl-5 {
         width: 41.65%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xl-6 {
         width: 50%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xl-7 {
         width: 58.31%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xl-8 {
         width: 66.64%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xl-9 {
         width: 75%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xl-10 {
         width: 83.3%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xl-11 {
         width: 91.63%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xl-12 {
         width: 100%;
-        padding: 0 10px;
+        padding: 10px;
+    }
+
+    /* Hero Section Start */
+    .hero .hero-image h1 {
+        font-size: 56px;
+    }
+
+    .hero .hero-image p {
+        font-size: 24px;
+    }
+
+    .hero .hero-image a {
+        padding: 10px 30px;
+        font-size: 22px;
+    }
+
+    /* Hero Section End */
+    /* Why to choose us Section Start */
+    .choose-us .choose-content ul li {
+        padding: 30px 0;
+    }
+
+    /* Why to choose us Section End */
+    /* Dealership Section Start */
+    .dealership .dealership-header h1 {
+        font-size: 36px;
+    }
+
+    /* Dealership Section End */
+    /* Footer Section Start */
+    footer .footer-details h2 {
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+
+    /* Footer Section End */
+    /* Reach us Section Start */
+    .reach-us .msg-details input,
+    textarea {
+        padding: 22px 30px;
+        margin: 10px 20px 5px 0;
+    }
+
+    .reach-us .msg-details .btn-submit {
+        padding: 10px 40px;
+        font-size: 20px;
+    }
+
+    /* Reach us Section End */
+    /* Recipes1 Section Start */
+    .recipe1 h2 {
+        padding-top: 30px;
+    }
+
+    .recipe1 .recipe-items ul li {
+        margin-top: 20px;
     }
 }
 
-@media(min-width:1400px){
+/* xxl */
+@media(min-width:1400px) {
+    .container-xxl {
+        max-width: 1320px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
     .col-xxl-1 {
         width: 8.33%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xxl-2 {
         width: 16.66%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xxl-3 {
         width: 25%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xxl-4 {
         width: 33.33%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xxl-5 {
         width: 41.65%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xxl-6 {
         width: 50%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xxl-7 {
         width: 58.31%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xxl-8 {
         width: 66.64%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xxl-9 {
         width: 75%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xxl-10 {
         width: 83.3%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xxl-11 {
         width: 91.63%;
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .col-xxl-12 {
         width: 100%;
-        padding: 0 10px;
+        padding: 10px;
     }
 }
