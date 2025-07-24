@@ -5,14 +5,17 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Shivaji Poha</title>
-	<link rel="stylesheet" href="./css/style.css" type="text/css" />
-	<link rel="stylesheet" href="./css/media.css" type="text/css" />
 	<link rel="stylesheet" href="./css/all.min.css" type="text/css" />
 	<link rel="stylesheet" href="./Fonts/stylesheet.css" type="text/css" />
 	<link rel="stylesheet" href="./Scope_One/stylesheet.css" type="text/css" />
 	<link rel="stylesheet" href="./raleway-font/stylesheet.css" type="text/css" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./css/style.css" type="text/css" />
+	<link rel="stylesheet" href="./css/media.css" type="text/css" />
 </head>
 
 <body>
@@ -53,7 +56,7 @@
 	<!-- Main Section Start-->
 	<main>
 		<!-- Hero Section Start-->
-		<section class="hero">
+		<section class="hero" data-aos="zoom-in">
 			<div class="container container-sm container-md container-lg container-xl container-xxl">
 				<div class="row">
 					<div class="col-xxl-12">
@@ -70,7 +73,7 @@
 		<div class="divider-50h"></div>
 
 		<!-- Quality Section Start-->
-		<section class="quality">
+		<section class="quality" data-aos="fade-up">
 			<div class="container container-sm container-md container-lg container-xl container-xxl">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-6 col-xxl-3">
@@ -124,7 +127,7 @@
 				<div class="row">
 					<div class="col-xs-12 col-xxl-3"></div>
 					<div class="col-xs-12 col-md-6 col-xxl-3">
-						<div class="product-item">
+						<div class="product-item" data-aos="fade-right">
 							<a href="javascript:void(0)" class="st-zoom">
 								<div class="zoom-in">
 									<img class="product-img" src="./images/image1.png" alt="image1">
@@ -133,7 +136,7 @@
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-6 col-xxl-3">
-						<div class="product-item">
+						<div class="product-item" data-aos="fade-left">
 							<a href="javascript:void(0)" class="st-zoom">
 								<div class="zoom-in">
 									<img class="product-img" src="./images/image11.png" alt="image11">
@@ -144,7 +147,8 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-xxl-12">
-						<div class="product-detail d-flex justify-content-center align-item-center">
+						<div class="product-detail d-flex justify-content-center align-item-center"
+							data-aos="flip-left">
 							<h1>
 								<p>We are available @
 									<span>indiamart &nbsp;<a target="_blank"
@@ -173,12 +177,12 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-md-12 col-xxl-6">
-						<div class="choose-img">
+						<div class="choose-img" data-aos="zoom-in">
 							<img src="./images/poha_girl.png" alt="poha_girl" />
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-12 col-xxl-6">
-						<div class="choose-content">
+						<div class="choose-content" data-aos="fade-left">
 							<ul>
 								<li><span><i class="fa-solid fa-check"></i></span>
 									<p>Qality gives us an assurance of purity. It is important to take care of our
@@ -211,7 +215,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row" data-aos="fade-up">
 					<div class="col-xs-12 col-sm-12 col-md-6 col-xxl-3 d-flex justify-content-center">
 						<div class="dealership-content">
 							<img src="./images/icon/1-01.png" alt="1-01" />
@@ -299,6 +303,7 @@
 		</section>
 	</footer>
 	<!-- Footer Section End-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	<script>
 		const links = document.querySelectorAll('.nav-link');
 		const currentUrl = window.location.pathname;
@@ -309,7 +314,15 @@
 			}
 		});
 	</script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+		integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		AOS.init({
+			duration: 800, // Animation duration in milliseconds
+			once: true, // Whether animation should happen only once - defaults to false
+		});
+	</script>
 </body>
 
 </html>
