@@ -36,7 +36,6 @@ https://shivajigoodpoha.vercel.app/
 - **CSS3**
 - **Bootstrap 5**
 - **Font Awesome** (via `all.min.css`)
-- **AOS (Animate On Scroll)** for scroll-based animations
 - **FormSubmit** for handling contact form submissions
 - **Responsive Design** using custom media queries
 
@@ -45,8 +44,7 @@ https://shivajigoodpoha.vercel.app/
 ## 🌟 Key Features
 
 ✅ **Sticky Navigation**  
-✅ **Hero Section with CTA**  
-✅ **Animated Sections with AOS**  
+✅ **Hero Section with CTA**   
 ✅ **Product Highlights with Shivaji Poha details**  
 ✅ **Detailed Recipes (3 total)**  
 ✅ **Contact Form** with validation + redirect  
