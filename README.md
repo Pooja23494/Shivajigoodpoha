@@ -6,7 +6,7 @@ This project is a fully responsive and animated promotional website for **Shivaj
 
 ## 🌍 Live Preview
 
-https://shivajigoodpoha.vercel.app/
+https://www.shivajigoodpoha.com
 
 ## 📁 Project Structure
 
