@@ -148,6 +148,11 @@
     }
 
     /* Reach us Section End */
+
+    .recipe1 .recipe1-header .recipe1-image img{
+        height: 400px;
+        object-fit: contain;
+    }
 }
 
 /* lg */
@@ -216,6 +221,14 @@
     .col-lg-12 {
         width: 100%;
         padding: 10px;
+    }
+
+    .about .about-image{
+        margin:30px 0;
+    }
+
+    .mission .mission-image{
+        margin-top: 0;
     }
 
     /* Reach us Section Start */
@@ -318,7 +331,8 @@
     /* Hero Section End */
     /* Why to choose us Section Start */
     .choose-us .choose-content ul li {
-        padding: 30px 0;
+        padding-bottom: 20px;
+        font-size: 1.3rem;
     }
 
     /* Why to choose us Section End */

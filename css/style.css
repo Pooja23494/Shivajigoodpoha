@@ -433,7 +433,7 @@ header {
 }
 
 .choose-us .choose-content ul {
-    margin-top: 50px;
+    margin-top: 20px;
     padding-left: 0;
 }
 
@@ -447,7 +447,7 @@ header {
 
 .choose-us .choose-content ul li span i {
     color: var(--theme-font);
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-right: 10px;
 }
@@ -571,8 +571,6 @@ header {
 }
 
 .about .about-image {
-    margin-top: 30px;
-    margin-bottom: 30px;
     padding: 30px;
     display: block;
     position: relative;
@@ -616,7 +614,13 @@ header {
     margin-bottom: 10px;
 }
 
-.mission .mission-image {
+.mission .mission-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mission .mission-image img {
     width: 75px;
 }
 
@@ -1012,7 +1016,8 @@ textarea {
 
 .recipe1 .recipe1-header .recipe1-image img {
     max-width: 700px;
-    height: 400px;
+    height: 250px;
+    object-fit: contain;
 }
 
 .recipe1 .recipe1-detail {
@@ -1064,13 +1069,14 @@ textarea {
 .recipe1 .recipe-items ul li {
     margin-top: 5px;
     display: flex;
+    align-items: flex-start;
 }
 
 .recipe1 .recipe-items ul li i {
     font-size: 16px;
     color: var(--theme-font);
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 .recipe1 .recipe-items ul li h4 {
